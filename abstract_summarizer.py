@@ -1,6 +1,7 @@
 # import necessary libraries
 import streamlit as st
 import arxiv
+import transformers
 from transformers import pipeline
 
 # Use BART model by Facebook for text summarization task
