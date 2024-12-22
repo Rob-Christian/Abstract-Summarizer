@@ -5,7 +5,7 @@ import transformers
 from transformers import pipeline
 
 # Use BART model by Facebook for text summarization task
-#summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
+summarizer = pipeline("summarization", model="sshleifer/distilbart-cnn-12-6")
 
 # Title of the streamlit app
 st.title("ArXiv Paper Abstract Summarizer")
@@ -59,9 +59,9 @@ if arxiv_url:
             st.write(paper.summary)
             
             # Summarize the abstract
- #           st.write("### Summarized Abstract")
- #           summarized_text = summarizer(paper.summary, max_length=100, min_length=30, do_sample=False)[0]['summary_text']
- #           st.write(summarized_text)
+            st.write("### Summarized Abstract")
+            summarized_text = summarizer(paper.summary, max_length=100, min_length=30, do_sample=False)[0]['summary_text']
+            st.write(summarized_text)
         else:
             st.error("No paper found with the provided URL.")
     except Exception as e:
