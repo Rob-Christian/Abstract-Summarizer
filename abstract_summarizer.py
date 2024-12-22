@@ -36,7 +36,7 @@ st.write(
     """
 )
 
-# Input: arXiv URL
+# Request an input from the user
 arxiv_url = st.text_input("Enter an ArXiv Paper URL")
 
 if arxiv_url:
