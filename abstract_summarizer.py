@@ -24,7 +24,7 @@ st.write(
     ### About the Model
     This app uses the **DistilBART model** (`sshleifer/distilbart-cnn-12-6`) for text summarization. DistilBART is a smaller, faster version of the popular BART (Bidirectional and Auto-Regressive Transformers) model developed by Facebook AI. It is specifically designed for tasks like summarization and translation.
 
-    DistilBART achieves a good balance between performance and efficiency by reducing the size of the original BART model, making it significantly faster and less resource-intensive, while still maintaining high-quality outputs. This makes it well-suited for real-time applications like this one, where speed and accuracy are both important.
+    DistilBART achieves a good balance between performance and efficiency by reducing the size of the original BART model. This makes it well-suited for real-time applications, where speed and accuracy are both important.
 
     No fine-tuning has been applied to the model. The model is used as-is, directly from Hugging Face's model hub, without any additional training or customization for specific types of documents.
 
