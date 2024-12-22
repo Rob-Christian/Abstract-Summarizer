@@ -4,7 +4,7 @@ import arxiv
 import transformers
 from transformers import pipeline
 
-# Use BART model by Facebook for text summarization task
+# Use DistilBart for text summarization task
 summarizer = pipeline("summarization", model="sshleifer/distilbart-cnn-12-6")
 
 # Title of the streamlit app
