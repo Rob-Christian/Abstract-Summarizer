@@ -22,10 +22,11 @@ st.write(
     ---
     
     ### About the Model
-    This app uses the [BART (Bidirectional and Auto-Regressive Transformers)](https://arxiv.org/abs/1910.13461) 
-    summarization model, specifically `facebook/bart-large-cnn`. BART is a powerful transformer-based architecture 
-    that has been pretrained on large datasets for tasks like summarization and translation. No fine-tuning has been 
-    performed for this specific application, so results may vary depending on the content of the abstract.
+    This app uses the **DistilBART model** (`sshleifer/distilbart-cnn-12-6`) for text summarization. DistilBART is a smaller, faster version of the popular BART (Bidirectional and Auto-Regressive Transformers) model developed by Facebook AI. It is specifically designed for tasks like summarization and translation.
+
+    DistilBART achieves a good balance between performance and efficiency by reducing the size of the original BART model, making it significantly faster and less resource-intensive, while still maintaining high-quality outputs. This makes it well-suited for real-time applications like this one, where speed and accuracy are both important.
+
+    No fine-tuning has been applied to the model. The model is used as-is, directly from Hugging Face's model hub, without any additional training or customization for specific types of documents.
 
     ---
     
